@@ -1,0 +1,122 @@
+entity Orgao {
+    nome String,
+    endereco String,
+    telefone String    
+}
+
+entity Funcionario {
+    nome String,
+    endereco String,
+    telefone String,
+    numVeiculoAbordado Integer,
+    numDocApreendido Integer
+}
+
+entity Cargo {
+    nome String
+}
+
+entity Departamento {
+    nome String    
+}
+ enum TipoEquipamento {
+ 	VESTUARIO, SEGURANCA, VEICULAR, OUTROS  
+}
+
+entity Equipamento {
+    descricao String,
+    tipo TipoEquipamento,
+    dataEntrada LocalDate    
+}
+
+enum StatusOperacao {
+	ABERTA,
+    PENDENTE,
+    CANCELADA,
+    CONCLUIDA
+}
+
+entity Operacao {
+    nome String,
+    data LocalDate,
+    status StatusOperacao
+}
+ enum SituacaoFiscalizacao {
+ 	ADIADA,
+    CANCELADA,
+    CONCLUIDA,
+    ABERTA
+ }
+
+entity Fiscalizacao {	
+    nome String,
+    dataInicio LocalDate,
+    dataFim LocalDate,
+    dataRegistro LocalDate,
+    observacao String,
+    situacao SituacaoFiscalizacao
+}
+
+entity Municipio {
+	nome String
+}
+
+entity Localizacao {
+    nome String,
+    bairro String,
+    logradouro String,
+    perimetro String    
+}
+
+enum TipoDocumentacao {
+    CNH, CRV, CRLV, BOLETO, RG, CPF, 
+    CNPJ, CTPS
+}
+entity Documentacao {
+    tipo TipoDocumentacao,
+    descricao String
+}
+
+entity Condutor {
+    nome String,
+    endereco String,
+    telefone String,    
+}
+
+enum TipoVeiculo {
+	CARRO, MOTO, PICKUP, CAMINHAO,
+    ONIBUS, TRICICLO
+
+}
+entity Veiculo {
+    marca String,
+    modelo String,
+    placa String,
+    chassi String,
+    ano Integer,
+    tipo TipoVeiculo
+}
+
+relationship OneToMany {
+	Departamento{agentes(nome)} to Funcionario{departamento(nome)},
+    Operacao{fiscalizacoes(nome)} to Fiscalizacao{operacao(nome)},
+    Operacao{locais(nome)} to Localizacao{operacao(nome)},
+    Fiscalizacao{documentacoes(descricao)} to Documentacao{fiscalizacao(nome)},
+    Fiscalizacao{locais(nome)} to Localizacao{fiscalizacao(nome)},
+    Fiscalizacao{condutores(nome)} to Condutor{fiscalizacao(nome)},
+    Fiscalizacao{veiculos(placa)} to Veiculo{fiscalizacao(nome)},
+    Operacao{equipamentos(descricao)} to Equipamento{operacao(nome)},
+    Operacao{departamentos(nome)} to Departamento{operacao(nome)},
+    Operacao{veiculos(placa)} to Veiculo{operacao(nome)},
+    Orgao{operacoes(nome)} to Operacao{orgao(nome)},
+    Cargo{funcionarios(nome)} to Funcionario{cargo(nome)},
+    Municipio{locais(nome)} to Localizacao{municipio(nome)}
+}
+
+relationship ManyToOne {
+	Funcionario{supervisor} to Funcionario,
+    Funcionario{chefe} to Funcionario,
+    Funcionario{gerente} to Funcionario
+}
+
+
