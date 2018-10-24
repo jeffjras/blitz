@@ -1,0 +1,25 @@
+
+{
+    "blitzApp": {
+        "equipamento" : {
+            "home": {
+                "title": "Equipamentos",
+                "createLabel": "Создать новый Equipamento",
+                "createOrEditLabel": "Создать или отредактировать Equipamento"
+            },
+            "created": "Новый Equipamento создан с идентификатором {{ param }}",
+            "updated": "Equipamento обновлен с идентификатором {{ param }}",
+            "deleted": "Equipamento удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Equipamento {{ id }}?"
+            },
+            "detail": {
+                "title": "Equipamento"
+            },
+            "descricao": "Descricao",
+            "tipo": "Tipo",
+            "dataEntrada": "Data Entrada",
+            "operacao": "Operacao"
+        }
+    }
+}

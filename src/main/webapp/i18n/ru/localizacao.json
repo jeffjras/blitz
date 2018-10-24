@@ -1,0 +1,28 @@
+
+{
+    "blitzApp": {
+        "localizacao" : {
+            "home": {
+                "title": "Localizacaos",
+                "createLabel": "Создать новый Localizacao",
+                "createOrEditLabel": "Создать или отредактировать Localizacao"
+            },
+            "created": "Новый Localizacao создан с идентификатором {{ param }}",
+            "updated": "Localizacao обновлен с идентификатором {{ param }}",
+            "deleted": "Localizacao удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Localizacao {{ id }}?"
+            },
+            "detail": {
+                "title": "Localizacao"
+            },
+            "nome": "Nome",
+            "bairro": "Bairro",
+            "logradouro": "Logradouro",
+            "perimetro": "Perimetro",
+            "operacao": "Operacao",
+            "fiscalizacao": "Fiscalizacao",
+            "municipio": "Municipio"
+        }
+    }
+}

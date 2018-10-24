@@ -1,0 +1,30 @@
+
+{
+    "blitzApp": {
+        "operacao" : {
+            "home": {
+                "title": "Operacaos",
+                "createLabel": "Создать новый Operacao",
+                "createOrEditLabel": "Создать или отредактировать Operacao"
+            },
+            "created": "Новый Operacao создан с идентификатором {{ param }}",
+            "updated": "Operacao обновлен с идентификатором {{ param }}",
+            "deleted": "Operacao удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Operacao {{ id }}?"
+            },
+            "detail": {
+                "title": "Operacao"
+            },
+            "nome": "Nome",
+            "data": "Data",
+            "status": "Status",
+            "fiscalizacoes": "Fiscalizacoes",
+            "locais": "Locais",
+            "equipamentos": "Equipamentos",
+            "departamentos": "Departamentos",
+            "veiculos": "Veiculos",
+            "orgao": "Orgao"
+        }
+    }
+}

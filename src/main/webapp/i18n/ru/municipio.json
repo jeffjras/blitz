@@ -1,0 +1,23 @@
+
+{
+    "blitzApp": {
+        "municipio" : {
+            "home": {
+                "title": "Municipios",
+                "createLabel": "Создать новый Municipio",
+                "createOrEditLabel": "Создать или отредактировать Municipio"
+            },
+            "created": "Новый Municipio создан с идентификатором {{ param }}",
+            "updated": "Municipio обновлен с идентификатором {{ param }}",
+            "deleted": "Municipio удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Municipio {{ id }}?"
+            },
+            "detail": {
+                "title": "Municipio"
+            },
+            "nome": "Nome",
+            "locais": "Locais"
+        }
+    }
+}
