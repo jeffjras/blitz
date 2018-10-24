@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "blitz",
+    "packageName": "br.ufpa.eas.tap",
+    "packageFolder": "br/ufpa/eas/tap",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": [
+      "en",
+      "fr",
+      "ru",
+      "pt-br"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.5.0",
+    "jwtSecretKey": "YWJlMTVmODIyMmU5MmFiNTY5NDdhZWE5OTdlNWZmMzU5MDg5NTJjNGU5Y2U2Y2NkNzE1OGJlZDVkN2EzODcyNjhjM2VkNDlkOWQ5OGJiMTAxYzAwOTg1YmRhMGIzNGVjYTQ5ZDcwMGI0NGQ5NGEwODUzNWY5OTA3YzE1ZTFkNjI="
+  },
+  "git-provider": "GitHub",
+  "git-company": "jeffjras",
+  "repository-name": "blitz"
+}
