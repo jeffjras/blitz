@@ -1,0 +1,11 @@
+{
+    "blitzApp": {
+        "StatusOperacao" : {
+            "null": "",
+            "ABERTA": "ABERTA",
+            "PENDENTE": "PENDENTE",
+            "CANCELADA": "CANCELADA",
+            "CONCLUIDA": "CONCLUIDA"
+        }
+    }
+}

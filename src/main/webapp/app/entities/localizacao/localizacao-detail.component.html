@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="localizacao">
+            <h2><span jhiTranslate="blitzApp.localizacao.detail.title">Localizacao</span> {{localizacao.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="blitzApp.localizacao.nome">Nome</span></dt>
+                <dd>
+                    <span>{{localizacao.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.bairro">Bairro</span></dt>
+                <dd>
+                    <span>{{localizacao.bairro}}</span>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.logradouro">Logradouro</span></dt>
+                <dd>
+                    <span>{{localizacao.logradouro}}</span>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.perimetro">Perimetro</span></dt>
+                <dd>
+                    <span>{{localizacao.perimetro}}</span>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.operacao">Operacao</span></dt>
+                <dd>
+                    <div *ngIf="localizacao.operacao">
+                        <a [routerLink]="['/operacao', localizacao.operacao?.id, 'view']">{{localizacao.operacao?.nome}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.fiscalizacao">Fiscalizacao</span></dt>
+                <dd>
+                    <div *ngIf="localizacao.fiscalizacao">
+                        <a [routerLink]="['/fiscalizacao', localizacao.fiscalizacao?.id, 'view']">{{localizacao.fiscalizacao?.nome}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="blitzApp.localizacao.municipio">Municipio</span></dt>
+                <dd>
+                    <div *ngIf="localizacao.municipio">
+                        <a [routerLink]="['/municipio', localizacao.municipio?.id, 'view']">{{localizacao.municipio?.nome}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/localizacao', localizacao.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+{
+    "blitzApp": {
+        "cargo" : {
+            "home": {
+                "title": "Cargos",
+                "createLabel": "Создать новый Cargo",
+                "createOrEditLabel": "Создать или отредактировать Cargo"
+            },
+            "created": "Новый Cargo создан с идентификатором {{ param }}",
+            "updated": "Cargo обновлен с идентификатором {{ param }}",
+            "deleted": "Cargo удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Cargo {{ id }}?"
+            },
+            "detail": {
+                "title": "Cargo"
+            },
+            "nome": "Nome",
+            "funcionarios": "Funcionarios"
+        }
+    }
+}

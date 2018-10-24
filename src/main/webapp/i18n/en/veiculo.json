@@ -1,0 +1,29 @@
+
+{
+    "blitzApp": {
+        "veiculo" : {
+            "home": {
+                "title": "Veiculos",
+                "createLabel": "Create a new Veiculo",
+                "createOrEditLabel": "Create or edit a Veiculo"
+            },
+            "created": "A new Veiculo is created with identifier {{ param }}",
+            "updated": "A Veiculo is updated with identifier {{ param }}",
+            "deleted": "A Veiculo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Veiculo {{ id }}?"
+            },
+            "detail": {
+                "title": "Veiculo"
+            },
+            "marca": "Marca",
+            "modelo": "Modelo",
+            "placa": "Placa",
+            "chassi": "Chassi",
+            "ano": "Ano",
+            "tipo": "Tipo",
+            "fiscalizacao": "Fiscalizacao",
+            "operacao": "Operacao"
+        }
+    }
+}

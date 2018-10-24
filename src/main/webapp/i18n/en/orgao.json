@@ -1,0 +1,25 @@
+
+{
+    "blitzApp": {
+        "orgao" : {
+            "home": {
+                "title": "Orgaos",
+                "createLabel": "Create a new Orgao",
+                "createOrEditLabel": "Create or edit a Orgao"
+            },
+            "created": "A new Orgao is created with identifier {{ param }}",
+            "updated": "A Orgao is updated with identifier {{ param }}",
+            "deleted": "A Orgao is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Orgao {{ id }}?"
+            },
+            "detail": {
+                "title": "Orgao"
+            },
+            "nome": "Nome",
+            "endereco": "Endereco",
+            "telefone": "Telefone",
+            "operacoes": "Operacoes"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "blitzApp": {
+        "SituacaoFiscalizacao" : {
+            "null": "",
+            "ADIADA": "ADIADA",
+            "CANCELADA": "CANCELADA",
+            "CONCLUIDA": "CONCLUIDA",
+            "ABERTA": "ABERTA"
+        }
+    }
+}
