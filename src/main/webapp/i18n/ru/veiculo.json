@@ -1,0 +1,29 @@
+
+{
+    "blitzApp": {
+        "veiculo" : {
+            "home": {
+                "title": "Veiculos",
+                "createLabel": "Создать новый Veiculo",
+                "createOrEditLabel": "Создать или отредактировать Veiculo"
+            },
+            "created": "Новый Veiculo создан с идентификатором {{ param }}",
+            "updated": "Veiculo обновлен с идентификатором {{ param }}",
+            "deleted": "Veiculo удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Veiculo {{ id }}?"
+            },
+            "detail": {
+                "title": "Veiculo"
+            },
+            "marca": "Marca",
+            "modelo": "Modelo",
+            "placa": "Placa",
+            "chassi": "Chassi",
+            "ano": "Ano",
+            "tipo": "Tipo",
+            "fiscalizacao": "Fiscalizacao",
+            "operacao": "Operacao"
+        }
+    }
+}

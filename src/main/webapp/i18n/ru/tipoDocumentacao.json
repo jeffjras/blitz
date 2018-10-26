@@ -1,0 +1,15 @@
+{
+    "blitzApp": {
+        "TipoDocumentacao" : {
+            "null": "",
+            "CNH": "CNH",
+            "CRV": "CRV",
+            "CRLV": "CRLV",
+            "BOLETO": "BOLETO",
+            "RG": "RG",
+            "CPF": "CPF",
+            "CNPJ": "CNPJ",
+            "CTPS": "CTPS"
+        }
+    }
+}

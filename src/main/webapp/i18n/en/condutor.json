@@ -1,0 +1,25 @@
+
+{
+    "blitzApp": {
+        "condutor" : {
+            "home": {
+                "title": "Condutors",
+                "createLabel": "Create a new Condutor",
+                "createOrEditLabel": "Create or edit a Condutor"
+            },
+            "created": "A new Condutor is created with identifier {{ param }}",
+            "updated": "A Condutor is updated with identifier {{ param }}",
+            "deleted": "A Condutor is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Condutor {{ id }}?"
+            },
+            "detail": {
+                "title": "Condutor"
+            },
+            "nome": "Nome",
+            "endereco": "Endereco",
+            "telefone": "Telefone",
+            "fiscalizacao": "Fiscalizacao"
+        }
+    }
+}

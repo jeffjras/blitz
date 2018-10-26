@@ -1,0 +1,32 @@
+
+{
+    "blitzApp": {
+        "fiscalizacao" : {
+            "home": {
+                "title": "Fiscalizacaos",
+                "createLabel": "Create a new Fiscalizacao",
+                "createOrEditLabel": "Create or edit a Fiscalizacao"
+            },
+            "created": "A new Fiscalizacao is created with identifier {{ param }}",
+            "updated": "A Fiscalizacao is updated with identifier {{ param }}",
+            "deleted": "A Fiscalizacao is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Fiscalizacao {{ id }}?"
+            },
+            "detail": {
+                "title": "Fiscalizacao"
+            },
+            "nome": "Nome",
+            "dataInicio": "Data Inicio",
+            "dataFim": "Data Fim",
+            "dataRegistro": "Data Registro",
+            "observacao": "Observacao",
+            "situacao": "Situacao",
+            "documentacoes": "Documentacoes",
+            "locais": "Locais",
+            "condutores": "Condutores",
+            "veiculos": "Veiculos",
+            "operacao": "Operacao"
+        }
+    }
+}
