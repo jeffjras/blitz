@@ -1,0 +1,31 @@
+
+{
+    "blitzApp": {
+        "funcionario" : {
+            "home": {
+                "title": "Funcionarios",
+                "createLabel": "Создать новый Funcionario",
+                "createOrEditLabel": "Создать или отредактировать Funcionario"
+            },
+            "created": "Новый Funcionario создан с идентификатором {{ param }}",
+            "updated": "Funcionario обновлен с идентификатором {{ param }}",
+            "deleted": "Funcionario удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Funcionario {{ id }}?"
+            },
+            "detail": {
+                "title": "Funcionario"
+            },
+            "nome": "Nome",
+            "endereco": "Endereco",
+            "telefone": "Telefone",
+            "numVeiculoAbordado": "Num Veiculo Abordado",
+            "numDocApreendido": "Num Doc Apreendido",
+            "supervisor": "Supervisor",
+            "chefe": "Chefe",
+            "gerente": "Gerente",
+            "departamento": "Departamento",
+            "cargo": "Cargo"
+        }
+    }
+}

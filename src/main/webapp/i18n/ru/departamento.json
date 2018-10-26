@@ -1,0 +1,24 @@
+
+{
+    "blitzApp": {
+        "departamento" : {
+            "home": {
+                "title": "Departamentos",
+                "createLabel": "Создать новый Departamento",
+                "createOrEditLabel": "Создать или отредактировать Departamento"
+            },
+            "created": "Новый Departamento создан с идентификатором {{ param }}",
+            "updated": "Departamento обновлен с идентификатором {{ param }}",
+            "deleted": "Departamento удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Departamento {{ id }}?"
+            },
+            "detail": {
+                "title": "Departamento"
+            },
+            "nome": "Nome",
+            "agentes": "Agentes",
+            "operacao": "Operacao"
+        }
+    }
+}

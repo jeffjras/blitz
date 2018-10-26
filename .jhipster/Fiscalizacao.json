@@ -1,0 +1,71 @@
+{
+    "name": "Fiscalizacao",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataInicio",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dataFim",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dataRegistro",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "observacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "situacao",
+            "fieldType": "SituacaoFiscalizacao",
+            "fieldValues": "ADIADA,CANCELADA,CONCLUIDA,ABERTA"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "documentacoes",
+            "otherEntityName": "documentacao",
+            "otherEntityRelationshipName": "fiscalizacao"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "locais",
+            "otherEntityName": "localizacao",
+            "otherEntityRelationshipName": "fiscalizacao"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "condutores",
+            "otherEntityName": "condutor",
+            "otherEntityRelationshipName": "fiscalizacao"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "veiculos",
+            "otherEntityName": "veiculo",
+            "otherEntityRelationshipName": "fiscalizacao"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "operacao",
+            "otherEntityName": "operacao",
+            "otherEntityField": "nome"
+        }
+    ],
+    "changelogDate": "20181026143938",
+    "entityTableName": "fiscalizacao",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

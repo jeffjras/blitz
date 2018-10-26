@@ -1,0 +1,24 @@
+
+{
+    "blitzApp": {
+        "documentacao" : {
+            "home": {
+                "title": "Documentacaos",
+                "createLabel": "Create a new Documentacao",
+                "createOrEditLabel": "Create or edit a Documentacao"
+            },
+            "created": "A new Documentacao is created with identifier {{ param }}",
+            "updated": "A Documentacao is updated with identifier {{ param }}",
+            "deleted": "A Documentacao is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Documentacao {{ id }}?"
+            },
+            "detail": {
+                "title": "Documentacao"
+            },
+            "tipo": "Tipo",
+            "descricao": "Descricao",
+            "fiscalizacao": "Fiscalizacao"
+        }
+    }
+}
